@@ -288,3 +288,8 @@
     inset 0 0 0 0.1em #16a34a,
     0 0 0 rgba(22, 163, 74, 0);
 }
+.icon:hover {
+  transform: scale(1.2);
+  filter: brightness(1.2);
+  cursor: pointer;
+}
