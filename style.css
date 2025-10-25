@@ -13,7 +13,6 @@ background-repeat:no-repeat;
 .container {
   width: 90vw;
   height: 80vh;
-  border-radius: 10px;
   display: flex;
   justify-content: center;
   align-content: center;
@@ -41,7 +40,9 @@ background-repeat:no-repeat;
     display: flex;
     justify-content: center;
     align-items: center;
-    backdrop-filter: blur(10px);
+    backdrop-filter: blur(15px);
+    border-top-left-radius: 5%;
+    border-bottom-left-radius: 5%;
 
 }
 .rightside{
@@ -50,6 +51,9 @@ background-repeat:no-repeat;
     display: flex;
     backdrop-filter: blur(10px);
     background-color: rgba(0, 0, 0, 0.8);
+    border-top-right-radius: 5%;
+    border-bottom-right-radius: 5%;
+
 
 }
 .context{
