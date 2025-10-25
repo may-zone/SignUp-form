@@ -51,6 +51,9 @@ background-repeat:no-repeat;
     width: 50%;
     height: 100%;
     display: flex;
+    backdrop-filter: blur(10px);
+    background-color: rgba(0, 0, 0, 0.8);
+
 }
 .context{
     border: yellow solid;
