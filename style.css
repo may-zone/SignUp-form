@@ -70,3 +70,15 @@ background-repeat:no-repeat;
 .context>h1{
     font-size: 60px;
 }
+.signup{
+    width: 70%;
+    border :solid rebeccapurple;
+}
+.or{
+    width: 2%;
+    border: orange solid ;
+}
+.social{
+    width: 15%;
+    border: solid blue;
+}
