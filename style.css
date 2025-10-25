@@ -15,6 +15,9 @@ background-repeat:no-repeat;
   width: 90vw;
   height: 80vh;
   border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-content: center;
 }
 .photo-credit {
   position: absolute;
@@ -32,4 +35,35 @@ background-repeat:no-repeat;
 
 .photo-credit a:hover {
   text-decoration: underline;
+}
+.leftside{
+    border: white dashed;
+    width: 50%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    backdrop-filter: blur(10px);
+
+}
+.rightside{
+    border: white dotted;
+    width: 50%;
+    height: 100%;
+    display: flex;
+}
+.context{
+    border: yellow solid;
+    color: aliceblue;
+    width: 80%;
+
+}
+
+.context>p{
+    color:antiquewhite;
+    font-size: 24px;
+
+}
+.context>h1{
+    font-size: 60px;
 }
