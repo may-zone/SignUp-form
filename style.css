@@ -72,15 +72,19 @@ background-repeat:no-repeat;
 }
 .signup{
     width: 70%;
-    border :solid rebeccapurple;
 }
 .or{
     width: 2%;
-    border: orange solid ;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: antiquewhite;
+    gap: 10px;
+
 }
 .social{
     width: 15%;
-    border: solid blue;
 }
 .signup {
   display: flex;
@@ -122,4 +126,13 @@ background-repeat:no-repeat;
   color: #16a34a;
   text-decoration: none;
   margin: 10px;
+}
+.hint a:hover {
+  text-decoration: underline;
+}
+
+.line {
+  width: 1px;
+  height: 270px;
+  background: rgba(255, 255, 255, 0.3);
 }
