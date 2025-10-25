@@ -5,7 +5,9 @@ display: flex;
 align-items: center;
 justify-content: center;
 margin: 0;
-
+background-image: url("/images/josefin-WS5yjFjycNY-unsplash.jpg");
+background-size: cover;
+background-repeat:no-repeat;
 }
 .container {
   border: red solid 2px;
