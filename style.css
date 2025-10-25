@@ -173,3 +173,24 @@
     .social a.fb { color: #1877f2; }
     .social a.tw { color: #1da1f2; }
     .social a.gg { color: #ea4335; }
+
+
+.madeby {
+  position: absolute;
+  bottom: 8px;
+  left: 12px;
+  font-size: 13px;
+  color: rgba(255, 255, 255, 0.8);
+  font-family: nunito; 
+  z-index: 1;
+  user-select: none;
+}
+
+.madeby span {
+  color: #e63946;
+}
+
+.madeby:hover {
+  color: #ffffff;
+  transition: color 0.3s ease;
+}
