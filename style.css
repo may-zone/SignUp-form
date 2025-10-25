@@ -8,10 +8,28 @@ margin: 0;
 background-image: url("/images/josefin-WS5yjFjycNY-unsplash.jpg");
 background-size: cover;
 background-repeat:no-repeat;
+  overflow: hidden;
 }
 .container {
   border: red solid 2px;
   width: 90vw;
   height: 80vh;
   border-radius: 10px;
+}
+.photo-credit {
+  position: absolute;
+  bottom: 8px;
+  right: 12px;
+  font-size: 13px;
+  color: rgba(255, 255, 255, 0.8);
+  font-family: inherit;
+  z-index: 1;
+}
+.photo-credit a {
+  color: rgba(255, 255, 255, 0.8);
+  text-decoration: none;
+}
+
+.photo-credit a:hover {
+  text-decoration: underline;
 }
