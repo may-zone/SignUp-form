@@ -82,3 +82,44 @@ background-repeat:no-repeat;
     width: 15%;
     border: solid blue;
 }
+.signup {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  gap: 40px;
+  padding: 40px;
+}
+.signup h2 {
+  margin-bottom: 10px;
+  color: antiquewhite;
+}
+.signup input {
+  background: transparent;
+  border: none;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.35);
+  padding: 10px 0;
+  color: white;
+  outline: none;
+}
+.btn {
+  background: #16a34a;
+  border: none;
+  padding: 12px;
+  color: white;
+  border-radius: 4px;
+  cursor: pointer;
+ margin-bottom: 0;
+}
+.hint {
+  font-size: 0.9rem;
+  opacity: 0.85;
+  color: antiquewhite;
+  text-align: center;
+  margin-top: 8px;
+  
+}
+.hint a {
+  color: #16a34a;
+  text-decoration: none;
+  margin: 10px;
+}
