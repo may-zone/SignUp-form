@@ -23,12 +23,14 @@
     overflow: hidden;
     }
     .container {
+    position: relative;
     width: 90vw;
     height: 80vh;
     display: flex;
     justify-content: center;
     align-items: center;
     align-content: center;
+    overflow: hidden;
     }
     .photo-credit {
     position: absolute;
@@ -74,8 +76,6 @@
         border-bottom-right-radius: 5%;
         font-family: nunito;
         overflow: hidden;
-
-
     }
     .context{
         color: aliceblue;
@@ -311,6 +311,34 @@
   0% { transform: translate3d(10%, 4.8em, 0) rotate(0deg); opacity: 0.45; }
   50% { transform: translate3d(10%, 2em, 0) rotate(90deg); opacity: 0.75; }
   100% { transform: translate3d(10%, -0.8em, 0) rotate(190deg); opacity: 0.45; }
+}
+
+/* swap animation */
+.container.swap-animate .leftside {
+  animation: swapLeft 0.85s ease-in-out forwards;
+  z-index: 2;
+}
+.container.swap-animate .rightside {
+  animation: swapRight 0.85s ease-in-out forwards;
+  z-index: 2;
+}
+.container.swapped {
+  flex-direction: row-reverse;
+}
+.container.swapped .leftside,
+.container.swapped .rightside {
+  animation: none;
+  transform: none;
+}
+@keyframes swapLeft {
+  0% { transform: translateX(0); }
+  50% { transform: translateX(52%); }
+  100% { transform: translateX(105%); }
+}
+@keyframes swapRight {
+  0% { transform: translateX(0); }
+  50% { transform: translateX(-48%); }
+  100% { transform: translateX(-105%); }
 }
 .icon:hover {
   transform: scale(1.2);

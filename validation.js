@@ -1,4 +1,5 @@
 const form = document.getElementById('signup-form');
+const container = document.querySelector('.container');
 const nameInput = document.getElementById('name');
 const emailInput = document.getElementById('email');
 const passwordInput = document.getElementById('password');
@@ -126,5 +127,25 @@ form.addEventListener('submit', (event) => {
     event.preventDefault();
     const firstInvalid = form.querySelector('input:invalid');
     if (firstInvalid) firstInvalid.focus();
+    return;
+  }
+
+  event.preventDefault();
+
+  // play swap animation then submit
+  if (!container.classList.contains('swap-animate')) {
+    container.classList.remove('swapped');
+    container.classList.add('swap-animate');
+
+    const handleAnimationEnd = () => {
+      container.classList.remove('swap-animate');
+      container.classList.add('swapped');
+      container.removeEventListener('animationend', handleAnimationEnd, true);
+      setTimeout(() => form.submit(), 200);
+    };
+
+    container.addEventListener('animationend', handleAnimationEnd, true);
+  } else {
+    form.submit();
   }
 });
