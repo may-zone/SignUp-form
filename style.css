@@ -330,6 +330,18 @@
   animation: none;
   transform: none;
 }
+.container.swapped .leftside {
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
+  border-top-right-radius: 5%;
+  border-bottom-right-radius: 5%;
+}
+.container.swapped .rightside {
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0;
+  border-top-left-radius: 5%;
+  border-bottom-left-radius: 5%;
+}
 @keyframes swapLeft {
   0% { transform: translateX(0); }
   50% { transform: translateX(52%); }
