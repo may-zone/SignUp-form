@@ -135,8 +135,9 @@
     color: antiquewhite;
     }
     .field-title {
-    font-size: 0.95rem;
-    letter-spacing: 0.3px;
+    font-size: 1.05rem;
+    letter-spacing: 0.35px;
+    color: #f8fafc;
     }
     .signup h2 {
     margin-bottom: 6px;
@@ -149,6 +150,10 @@
     padding: 8px 0;
     color: white;
     outline: none;
+    }
+    .signup input::placeholder {
+    color: rgba(255, 255, 255, 0.55);
+    font-size: 0.8rem;
     }
     .btn {
     background: #16a34a;
