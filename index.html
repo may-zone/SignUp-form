@@ -16,14 +16,30 @@
         </div>
     </div>
     <div class="rightside">
-        <form action="https://httpbin.org/post" method="post" class="signup">
+        <form action="https://httpbin.org/post" method="post" class="signup" id="signup-form" novalidate>
             <h2>Sign Up</h2>
-            <input type="text" placeholder="Your Name">
-            <input type="email" placeholder="Your Email">
-            <input type="password" placeholder="Create Password">
-            <input type="password" placeholder="Retype password">
+            <label class="field">
+                <span class="field-title">Name</span>
+                <input type="text" id="name" name="name" placeholder="Your Name" required minlength="2" maxlength="50" autocomplete="name">
+                <span class="error" aria-live="polite"></span>
+            </label>
+            <label class="field">
+                <span class="field-title">Email</span>
+                <input type="email" id="email" name="email" placeholder="Your Email" required autocomplete="email">
+                <span class="error" aria-live="polite"></span>
+            </label>
+            <label class="field">
+                <span class="field-title">Password</span>
+                <input type="password" id="password" name="password" placeholder="Create Password" required minlength="8" autocomplete="new-password">
+                <span class="hintline">At least 8 chars, 1 upper, 1 lower, 1 number, 1 symbol</span>
+                <span class="error" aria-live="polite"></span>
+            </label>
+            <label class="field">
+                <span class="field-title">Confirm Password</span>
+                <input type="password" id="confirm-password" name="confirmPassword" placeholder="Retype password" required autocomplete="new-password">
+                <span class="error" aria-live="polite"></span>
+            </label>
 
-           
             <button type="submit" class="btn">Sign up</button>
 
             <p class="hint">
@@ -52,5 +68,6 @@
   <div class="madeby">
   Made with <span>&#10084;</span> for Kim :)
 </div>
+<script src="validation.js"></script>
 </body>
 </html>

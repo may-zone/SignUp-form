@@ -17,7 +17,7 @@
     align-items: center;
     justify-content: center;
     margin: 0;
-    background-image: url("/images/josefin-WS5yjFjycNY-unsplash.jpg");
+    background-image: url("./images/josefin-WS5yjFjycNY-unsplash.jpg");
     background-size: cover;
     background-repeat:no-repeat;
     overflow: hidden;
@@ -115,6 +115,16 @@
     flex: 1;
     gap: 40px;
     padding: 40px;
+    }
+    .field {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+    color: antiquewhite;
+    }
+    .field-title {
+    font-size: 0.95rem;
+    letter-spacing: 0.3px;
     }
     .signup h2 {
     margin-bottom: 10px;
@@ -292,4 +302,13 @@
   transform: scale(1.2);
   filter: brightness(1.2);
   cursor: pointer;
+}
+.error {
+  min-height: 18px;
+  font-size: 0.85rem;
+  color: #fca5a5;
+}
+.hintline {
+  font-size: 0.8rem;
+  color: rgba(255, 255, 255, 0.65);
 }
