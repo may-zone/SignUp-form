@@ -362,6 +362,7 @@
   filter: brightness(1.2);
   cursor: pointer;
 }
+<<<<<<< HEAD
 .error {
   min-height: 14px;
   font-size: 0.8rem;
@@ -374,3 +375,5 @@
   line-height: 1.25;
   margin-top: -4px;
 }
+=======
+>>>>>>> 138d5c0b9504a809cab3dfa132a83b4f23a58ad3
