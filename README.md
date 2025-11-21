@@ -4,6 +4,8 @@ Polished two-panel sign-up page with live validation, animated CTA, and a playfu
 
 ![Preview](SC.png)
 
+Originally a Sign Up Form assignment from The Odin Project; the visual design here was reimagined with inspiration from Pinterest to make the layout and form experience feel more polished.
+
 ## Features
 - Inline validation (name, email, strong password, confirm match) with instant error messaging.
 - Animated “Sign up” button with ambient wave effect that runs by default.
